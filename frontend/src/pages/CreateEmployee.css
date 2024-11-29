@@ -1,0 +1,134 @@
+/* General Layout and Container */
+.create-employee-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.create-employee-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Form Styling */
+.create-employee-container form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="file"] {
+  padding: 8px;
+}
+
+/* Focus Styles for Inputs */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Align Gender Radio Buttons Horizontally */
+.create-employee-container .form-group div {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 15px; 
+}
+
+/* Align Course Checkboxes Horizontally */
+.create-employee-container .form-group .checkbox-group {
+  display: flex;
+  gap: 15px; 
+}
+
+/* Checkbox and Radio Button Style */
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+  margin-right: 8px;
+  margin-left: 5px;
+}
+
+/* Button Styling */
+button {
+  padding: 14px 28px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 20px; 
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Hover Effect for Inputs */
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: #4CAF50;
+  cursor: pointer;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .create-employee-container {
+    padding: 25px; 
+  }
+
+  .create-employee-container form {
+    grid-template-columns: 1fr; 
+  }
+
+  button {
+    width: 100%; 
+  }
+}
